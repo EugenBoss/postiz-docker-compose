@@ -14,7 +14,8 @@ services:
       BACKEND_INTERNAL_URL: 'http://localhost:3000'
       TEMPORAL_ADDRESS: "temporal:7233"
       IS_GENERAL: 'true'
-      DISABLE_REGISTRATION: 'false'
+      # Bootstrap-ul local este deja creat; păstrează o singură poartă de administrare.
+      DISABLE_REGISTRATION: 'true'
       RUN_CRON: 'true'
 
       # === Storage Settings
