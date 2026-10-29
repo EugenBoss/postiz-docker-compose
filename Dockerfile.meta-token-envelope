@@ -6,4 +6,6 @@ RUN node /opt/postiz-token-envelope/apply-patch.mjs /app
 
 # Runtime must supply POSTIZ_INTEGRATION_TOKEN_ACTIVE_KEY and a keyring only through
 # POSTIZ_INTEGRATION_TOKEN_KEYS_FILE. Inline key material is rejected.
+# Signed Meta receipts additionally require an Ed25519 private key only through
+# POSTIZ_META_REVOCATION_SIGNING_KEY_FILE. The active non-secret id is inside the file.
 # No key is baked here.
