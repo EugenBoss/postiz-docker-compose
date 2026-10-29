@@ -1,0 +1,21 @@
+{
+  "publicKeyPem": "-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAxF/UpyKYldTy4IjvGLOOJ+N0eslL+7icWu54y5rLYFg=\n-----END PUBLIC KEY-----\n",
+  "canonical": "{\"integrationId\":\"pst_cross_contract_1\",\"provider\":\"meta\",\"platform\":\"facebook\",\"externalAccountId\":\"page_cross_contract_1\",\"credentialVersion\":1,\"providerAccess\":\"retained_for_siblings\",\"siblingCount\":2,\"localCredential\":\"invalidated\",\"killSwitchEngaged\":true,\"receiptId\":\"meta_rvk:cross_contract_1\",\"providerRevokedAt\":null,\"credentialInvalidatedAt\":\"2026-10-29T12:09:30.000Z\",\"idempotencyKey\":\"f246ec41da763bfdecc74b48f9f185ff83e52faeee75b66893d6a3c8ae581a59\",\"receiptKeyId\":\"postiz-meta-cross-contract-v1\"}",
+  "receipt": {
+    "integrationId": "pst_cross_contract_1",
+    "provider": "meta",
+    "platform": "facebook",
+    "externalAccountId": "page_cross_contract_1",
+    "credentialVersion": 1,
+    "providerAccess": "retained_for_siblings",
+    "siblingCount": 2,
+    "localCredential": "invalidated",
+    "killSwitchEngaged": true,
+    "receiptId": "meta_rvk:cross_contract_1",
+    "providerRevokedAt": null,
+    "credentialInvalidatedAt": "2026-10-29T12:09:30.000Z",
+    "idempotencyKey": "f246ec41da763bfdecc74b48f9f185ff83e52faeee75b66893d6a3c8ae581a59",
+    "receiptKeyId": "postiz-meta-cross-contract-v1",
+    "receiptSignature": "0T43PtQnuCOhBMphKsMWmLvBzzZ-kEVGSk8FO8uUp38awGHvF4hF5golc-sx-c1nlDVfd0Y4UJLOt8YaYxhBCQ"
+  }
+}

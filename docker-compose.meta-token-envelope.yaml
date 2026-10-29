@@ -1,0 +1,30 @@
+services:
+  postiz:
+    image: postiz-pm-meta-token-envelope:v1.47.0-local
+    build:
+      context: .
+      dockerfile: Dockerfile.meta-token-envelope
+    environment:
+      POSTIZ_INTEGRATION_TOKEN_ACTIVE_KEY: '${POSTIZ_INTEGRATION_TOKEN_ACTIVE_KEY:?POSTIZ_INTEGRATION_TOKEN_ACTIVE_KEY must be set}'
+      POSTIZ_INTEGRATION_TOKEN_KEYS_FILE: /run/secrets/postiz_integration_token_keys
+      POSTIZ_INTEGRATION_TOKEN_LEGACY_MODE: reject
+      POSTIZ_META_REVOCATION_SIGNING_KEY_FILE: /run/secrets/postiz_meta_revocation_signing_key
+      # A destructive Meta credential operation needs an explicit one-shot override.
+      POSTIZ_META_REVOKE_APPLY: 'NO'
+    secrets:
+      - source: postiz_integration_token_keys
+        target: postiz_integration_token_keys
+        uid: "0"
+        gid: "0"
+        mode: 0400
+      - source: postiz_meta_revocation_signing_key
+        target: postiz_meta_revocation_signing_key
+        uid: "0"
+        gid: "0"
+        mode: 0400
+
+secrets:
+  postiz_integration_token_keys:
+    file: '${POSTIZ_INTEGRATION_TOKEN_KEYS_HOST_FILE:?POSTIZ_INTEGRATION_TOKEN_KEYS_HOST_FILE must be set}'
+  postiz_meta_revocation_signing_key:
+    file: '${POSTIZ_META_REVOCATION_SIGNING_KEY_HOST_FILE:?POSTIZ_META_REVOCATION_SIGNING_KEY_HOST_FILE must be set}'
