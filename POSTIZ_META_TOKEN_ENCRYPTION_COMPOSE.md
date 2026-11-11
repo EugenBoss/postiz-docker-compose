@@ -35,3 +35,8 @@ remove an old key id until the dry-run reports zero ciphertext rows using it.
 Validation is read-only and does not start or recreate containers:
 
     node postiz-token-envelope/compose-overlay.test.mjs
+
+Before a real Meta OAuth deployment, use the separately executable HTTPS,
+digest, file-only-secret and OAuth-quiescence gate in
+`POSTIZ_META_RUNTIME_DEPLOYMENT.md`. A passing local Compose contract alone is
+not runtime proof.

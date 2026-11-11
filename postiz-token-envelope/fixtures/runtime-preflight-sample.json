@@ -1,0 +1,19 @@
+{
+  "image": "registry.example/postiz@sha256:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  "environment": {
+    "POSTIZ_INTEGRATION_TOKEN_ACTIVE_KEY": "k2026_11",
+    "POSTIZ_INTEGRATION_TOKEN_KEYS_FILE": "/run/secrets/postiz_integration_token_keys",
+    "POSTIZ_INTEGRATION_TOKEN_LEGACY_MODE": "reject",
+    "POSTIZ_META_REVOCATION_SIGNING_KEY_FILE": "/run/secrets/postiz_meta_revocation_signing_key",
+    "POSTIZ_META_REVOKE_APPLY": "NO"
+  },
+  "secrets": [
+    "postiz_integration_token_keys",
+    "postiz_meta_revocation_signing_key"
+  ],
+  "oauth_callbacks": {
+    "in_flight": 0,
+    "quiesced": true,
+    "observed_at": "2026-11-11T11:59:00.000Z"
+  }
+}
